@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from python_scripts.scraping_loop import get_data
 app = Flask(__name__)
+app.config["DEBUG"] = True
 
 @app.route("/api/v1/get_esg_average",methods=['GET'])
 def get_esg_average():
@@ -20,7 +21,7 @@ def get_esg_average():
         if not np.isnan(df['2'][i]):
             esg_average += df['1'][i]/weight_sum * df['2'][i]
 
-    return esg_average
+    return str(esg_average)
 
 @app.route("/api/v1/update", methods=['GET'])
 def update():
