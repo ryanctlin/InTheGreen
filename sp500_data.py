@@ -20,19 +20,16 @@ def scrape_sp500():
     for num, text in enumerate(tickers):
         text = str(re.search('<td><a href="/symbol/(.+?)">', text).group(1))
         tickers[num] = text
-    print(len(tickers))
 
     #Extract weights
     weights = scraped[3:len(scraped) - 1:7]
     for num, weight in enumerate(weights):
         weight = float(re.search('<td>(.+?)</td>', weight).group(1))
         weights[num] = weight
-    print(len(weights))
 
     #Output as dictionary
-    result = dict(zip(tickers,weights))
+    result = list(zip(tickers,weights))
     return(result)
 
 #Testing
-print(scrape_sp500())
-
+#print(scrape_sp500())
