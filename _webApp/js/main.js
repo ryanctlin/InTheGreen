@@ -4,7 +4,6 @@ $(document).ready(function () {
 })
 
 //navbar scroll
-
 $(".navbar a").click(function () {
 	$("body,html").animate({
 		scrollTop: $("#" + $(this).data('value')).offset().top
@@ -14,7 +13,6 @@ $(".navbar a").click(function () {
 })
 
 //Skillbar Animation
-
 jQuery(document).ready(function () {
 	jQuery('.skillbar').each(function () {
 		jQuery(this).find('.skillbar-bar').animate({
@@ -23,14 +21,21 @@ jQuery(document).ready(function () {
 	});
 });
 
-//Modal Load
-
-$('#exampleModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var remoteData = button.data('remote'); // Extract info from data-* attributes
-    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-    var modal = $(this);
-	modal.find('.modal-body').load(remoteData);
-	console.log(remoteData);
-});
+//Change image
+// function getStats() {  
+// 	//fetch data
+// 	var level;
+// 	const response = await fetch('http://example.com/movies.json');
+// 	if(response >= 75){
+// 		level=4
+// 	}else if(response>=50 && response<75){
+// 		level=3;
+// 	}else if(response>=25 && response<50){
+// 		level=2;
+// 	}else{
+// 		level=1
+// 	}
+// 	document.getElementById("tree-img").src = "images/stage-".concat(level.toString(),"-tree.png");
+// 	console.log(imageNo);
+// }
+//setTimeout(getStats, 1000);

@@ -21,10 +21,12 @@ def get_esg_average():
         if not np.isnan(df['2'][i]):
             esg_average += df['1'][i]/weight_sum * df['2'][i]
 
-    return str(esg_average)
+    esg_average = "{0:.1f}".format(esg_average)
+    return esg_average
 
 @app.route("/api/v1/update", methods=['GET'])
 def update():
     get_data()
+    return "Update Successful"
 
 app.run()

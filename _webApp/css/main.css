@@ -113,12 +113,14 @@ html, h1, h2, h3, h4, h5, h6, a {
 .split-screen-right {
     background-color: white;
 }
+.split-screen-right h2 { display: inline;font-size: 3em;}
+.split-screen-right h3 { display: inline;font-size: 3em;}
+
 
 .contact-form {
     padding: 2em;
     margin-top: 3em;
     position: relative;
-    background-image: url('../images/footer.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -256,6 +258,12 @@ html, h1, h2, h3, h4, h5, h6, a {
     .my-tree {
         background-attachment: scroll !important;
         background-position: center center !important;
+    }
+    .my-tree img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
     .work-exp {
         background-attachment: scroll !important;
