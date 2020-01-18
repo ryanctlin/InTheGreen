@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+html, h1, h2, h3, h4, h5, h6, a {
+    font-family: "Raleway";
+}
+
+/*header style*/
+
+.header {
+    background-image: url('../images/headerback4.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 120px 0 120px 0;
+}
+
+.description {
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    margin: 0.2em;
+    padding: 1em;
+}
+
+.description h1 {
+    color: rgb(15, 32, 5);
+    background-color: white;
+    font-weight: bold;
+}
+
+.description p {
+    color: rgb(15, 32, 5);
+    background-color: white;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #F97300;
+    background: rgba(249, 116, 0, 0.781);
+    color: #fff;
+}
+
+/*my-tree me section */
+
+.my-tree {
+    margin: 0em;
+    padding: 0.5em;
+    position: relative;
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+
+.my-tree .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(65, 55, 119, 0.311);
+    z-index: -1;
+}
+
+.my-tree span {
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+
+.my-tree .desc {
+    padding: 2em;
+    border-left: 2px solid rgb(240, 236, 233);
+}
+
+.my-tree .desc h3 {
+    color: rgb(240, 236, 233);
+    ;
+}
+
+.my-tree .desc p {
+    line-height: 2;
+    color: rgb(240, 236, 233);
+    text-align: left;
+}
+
+.split-screen h1 {
+    color: rgb(18, 61, 10);
+    margin: 0em;
+    padding: 0.5em;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    font-size: 4em;
+    z-index: 0;
+}
+
+.split-screen-left {
+    background-color: white;
+}
+
+.split-screen-left img {
+    width: 54%;
+}
+
+.split-screen-right {
+    background-color: white;
+}
+
+.contact-form {
+    padding: 2em;
+    margin-top: 3em;
+    position: relative;
+    background-image: url('../images/footer.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-form .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(18, 61, 10);
+    z-index: 0;
+    color: white;
+}
+
+.contact-form h1 {
+    margin: 0.1em;
+    color: rgb(18, 61, 10);
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.contact-form .right .btn-secondary {
+    background: rgb(14, 48, 8);
+    color: #fff;
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+
+/*skill bars*/
+
+.skills {
+    margin: 0em;
+    padding: 2em;
+    position: relative;
+}
+
+.skills h1 {
+    color: rgba(32, 32, 32, 0.815);
+    margin: 1em;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 5px;
+    height: 35px;
+    line-height: 25px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 80%;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 12px;
+    font-weight: 500;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* phones*/
+@media handheld, only screen and (max-width: 769px) {
+    .header {
+        background-attachment: scroll !important;
+        background-position: center center !important;
+    }
+    .my-tree {
+        background-attachment: scroll !important;
+        background-position: center center !important;
+    }
+    .work-exp {
+        background-attachment: scroll !important;
+        background-position: center center !important;
+    }
+    .contact-form {
+        background-attachment: scroll !important;
+        background-position: center center !important;
+    }
+}

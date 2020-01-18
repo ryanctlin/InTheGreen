@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GreenInvest</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #e3f2fd;">
+          <a class="navbar-brand" data-value="home" href="#">
+            GreenInvest
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" data-value="my-tree" href="#">My Tree</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-value="contact" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Header-->
+        <header class="header" id="home">
+            <div class="container">
+                <div class="description">
+                    <h1>Hello, Welcome GreenInvest</h1>
+                    <p>A sustainable and greener way to invest your money without comprimising returns.</p>
+                </div>
+            </div>
+        </header>
+        <!--My-Tree-->
+        <div class="split-screen" id="my-tree">
+            <h1 class="text-center">My Tree</h1>
+            <div class="d-md-flex h-md-100 align-items-center">
+                <!-- Left Half -->
+                <div class="col-md-6 p-0 split-screen-left h-md-100">
+                    <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                        <img src="images/stage-3-tree.png" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Right Half -->
+                <div class="col-md-6 p-0 split-screen-right h-md-100">
+                    <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                        Second half content here
+                    </div>
+                </div>     
+            </div>
+        </div>
+            
+        <!-- Contact form -->
+        <div class="contact-form" id="contact">
+            <div class="container">
+            <form action="https://formspree.io/theodore.ouzounellis@gmail.com" method="POST">
+                <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h1>Get in Touch</h1>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 right">
+                    <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="name">
+                    </div>
+                    <div class="form-group">
+                    <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+                    </div>
+                    <div class="form-group">
+                    <textarea class="form-control form-control-lg" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="" onclick="">
+                </div>
+                </div>
+            </form>
+            </div>
+            <h7 style="font-size: 0.7em; color: rgb(1, 10, 17)">Created by T.T.Ouzounellis Kavlakonis</h7>
+        </div>
+        <!--Scripts-Load JS-->
+        <script type="text/javascript" src='./js/main.js'></script>
+    </body>
+</html>
