@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 from sp500_data import scrape_sp500
 from yahoo_data import ticker_ESG
@@ -11,7 +10,6 @@ data = []
 for item in snp:
     esg_score = ticker_ESG(item[0])
     data.append([item[0], item[1], esg_score])
-
 
 #Export to csv file
 df = pd.DataFrame(data)
