@@ -1,9 +1,10 @@
 import pandas as pd
-from sp500_data import scrape_sp500
-from yahoo_data import ticker_ESG
+from python_scripts.sp500_data import scrape_sp500
+from python_scripts.yahoo_data import ticker_ESG
 
 #Obtain tickers and weights
 snp = scrape_sp500()
+
 
 #Recursively obtain ESG scores for each ticker, collate into list with format [symbol, weight, ESG_score]
 data = []
@@ -14,4 +15,4 @@ for item in snp:
 #Export to csv file
 df = pd.DataFrame(data)
 print(df)
-df.to_csv('./data/esg_scores.csv', index=False)
+df.to_csv('./data/esg_scores1.csv', index=False)
