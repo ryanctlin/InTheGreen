@@ -1,0 +1,2 @@
+S&P500 Index composition for webscraping: https://www.slickcharts.com/sp500
+Theo's tutorial: http://www.theodorosouzounellis.com/blogs/pythonInFinance/pt1/pythonInFinancePt1.html
