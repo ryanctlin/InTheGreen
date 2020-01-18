@@ -28,4 +28,5 @@ def scrape_yahoo(url):
 
     return total_ESG
 
+#Testing
 print(ticker_ESG('aapl'))
