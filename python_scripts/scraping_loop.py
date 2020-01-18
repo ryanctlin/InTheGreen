@@ -5,7 +5,7 @@ from python_scripts.yahoo_data import ticker_ESG
 def get_data():
     #Obtain tickers and weights
     snp = scrape_sp500()
-
+    snp = snp[1:3]
 
     #Recursively obtain ESG scores for each ticker, collate into list with format [symbol, weight, ESG_score]
     data = []
@@ -15,5 +15,5 @@ def get_data():
 
     #Export to csv file
     df = pd.DataFrame(data)
-    print(df)
-    df.to_csv('./data/esg_scores1.csv', index=False)
+    #print(df)
+    df.to_csv('./python_scripts/data/esg_scores1.csv', index=False)
