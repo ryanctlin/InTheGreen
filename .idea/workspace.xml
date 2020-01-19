@@ -225,7 +225,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579359840150</updated>
       <workItem from="1579359864620" duration="14871000" />
-      <workItem from="1579380218544" duration="6757000" />
+      <workItem from="1579380218544" duration="9957000" />
     </task>
     <servers />
   </component>
@@ -241,22 +241,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579367366493" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1579383030268">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1579401056196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579383030268" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1579383030268">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579401056196" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1579401056195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579383030268" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1579383030268">
+    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579401056195" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1579401056195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579383030268" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1579383030268">
+    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579401056195" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1579401056196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579383030268" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579401056196" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1579367433051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -267,7 +267,7 @@
     <SUITE FILE_PATH="coverage/hackcambridge_2020$yahoo_data.coverage" NAME="yahoo_data Coverage Results" MODIFIED="1579368229572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$bs4_EUR_Lex.coverage" NAME="bs4_EUR_Lex Coverage Results" MODIFIED="1579364993332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../EU Legislation NLP/EU_Legislation_NLP/web_scraping" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$sp500_data.coverage" NAME="sp500_data Coverage Results" MODIFIED="1579371622938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_webApp" />
-    <SUITE FILE_PATH="coverage/hackcambridge_2020$application.coverage" NAME="application Coverage Results" MODIFIED="1579383030268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hackcambridge_2020$application.coverage" NAME="application Coverage Results" MODIFIED="1579401056185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$scraping_loop__1_.coverage" NAME="scraping_loop (1) Coverage Results" MODIFIED="1579380065681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1579374011577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

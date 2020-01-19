@@ -1,11 +1,11 @@
 from flask import Flask
+from flask_api import FlaskAPI
 import numpy as np
 import pandas as pd
 from python_scripts.scraping_loop import get_data
-app = Flask(__name__)
-#app.config["DEBUG"] = True
+app = FlaskAPI(__name__)
 
-@app.route("/api/v1/get_esg_average",methods=['GET'])
+@app.route("/api/v1/get_esg_average", methods=['GET'])
 def get_esg_average():
     df = pd.read_csv('./python_scripts/data/esg_scores.csv', delimiter=',')
     esg_average = 0
@@ -29,4 +29,5 @@ def update():
     get_data()
     return "Update Successful"
 
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
