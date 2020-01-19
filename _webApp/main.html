@@ -1,107 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <title>
-   GreenInvest
-  </title>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport"/>
-  <link href="./css/main.css" rel="stylesheet"/>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
-  </script>
- </head>
- <body>
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #e3f2fd;">
-   <a class="navbar-brand" data-value="home" href="#">
-    GreenInvest
-   </a>
-   <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarTogglerDemo02" data-toggle="collapse" type="button">
-    <span class="navbar-toggler-icon">
-    </span>
-   </button>
-   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-     <li class="nav-item">
-      <a class="nav-link" data-value="my-tree" href="#">
-       My Tree
-      </a>
-     </li>
-     <li class="nav-item">
-      <a class="nav-link" data-value="contact" href="#">
-       Contact
-      </a>
-     </li>
-    </ul>
-   </div>
-  </nav>
-  <!-- Header-->
-  <header class="header" id="home">
-   <div class="container">
-    <div class="description">
-     <h1>
-      Hello, Welcome GreenInvest
-     </h1>
-     <p>
-      A sustainable and greener way to invest your money without comprimising returns.
-     </p>
+
+<head>
+    <title>
+        GreenInvest
+    </title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" data-value="home" href="#">
+            GreenInvest
+        </a>
+        <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler" data-target="#navbarTogglerDemo02" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="my-tree" href="#">
+                        My Tree
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="chatbot" href="#">
+                        Chatbot
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="contact" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="description">
+                <h1>
+                    Hello, Welcome to GreenInvest
+                </h1>
+                <p>
+                    A sustainable and greener way to invest your money without comprimising returns.
+                </p>
+            </div>
+        </div>
+    </header>
+    <!--My-Tree-->
+    <div class="split-screen" id="my-tree">
+        <h1 class="text-center">
+            My Tree
+        </h1>
+        <div class="d-md-flex h-md-100 align-items-center">
+            <!-- Left Half -->
+            <div class="col-md-6 p-0 split-screen-left h-md-100">
+                <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                    <img class="img-fluid" id="tree-img" src="images/stage-4-tree.png" />
+                </div>
+            </div>
+            <!-- Right Half -->
+            <div class="col-md-6 p-0 split-screen-right h-md-100">
+                <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                    <div id="rating-bar"></div>
+                </div>
+            </div>
+        </div>
     </div>
-   </div>
-  </header>
-  <!--My-Tree-->
-  <div class="split-screen" id="my-tree">
-   <h1 class="text-center">
-    My Tree
-   </h1>
-   <div class="d-md-flex h-md-100 align-items-center">
-    <!-- Left Half -->
-    <div class="col-md-6 p-0 split-screen-left h-md-100">
-     <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
-      <img class="img-fluid" id="tree-img" src="images/stage-4-tree.png"/>
-     </div>
+    <!--Chatbox-->
+    <div class='chatbot' id='chatbot'>
+        <h1 class="text-center">Chatbot</h1>
+        <div id='bodybox'>
+            <div id='chatborder'>
+                <p id="chatlog7" class="chatlog">&nbsp;</p>
+                <p id="chatlog6" class="chatlog">&nbsp;</p>
+                <p id="chatlog5" class="chatlog">&nbsp;</p>
+                <p id="chatlog4" class="chatlog">&nbsp;</p>
+                <p id="chatlog3" class="chatlog">&nbsp;</p>
+                <p id="chatlog2" class="chatlog">&nbsp;</p>
+                <p id="chatlog1" class="chatlog">&nbsp;</p>
+                <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me."
+                    onfocus="placeHolder()">
+            </div>
+        </div>
     </div>
-    <!-- Right Half -->
-    <div class="col-md-6 p-0 split-screen-right h-md-100">
-     <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
-        <h2>Rating: </h2><h3>63</h3>
-     </div>
+    <!-- Contact form -->
+    <div class="contact-form" id="contact">
+        <div class="container">
+            <form action="https://formspree.io/theodore.ouzounellis@gmail.com" method="POST">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h1>
+                            Get in Touch
+                        </h1>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="form-group">
+                            <input class="form-control form-control-lg" name="name" placeholder="Your Name"
+                                type="text" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-lg" name="email" placeholder="YourEmail@email.com"
+                                type="email" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control form-control-lg" name="message"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <input class="btn btn-secondary btn-block" name="" onclick="" type="submit" value="Send" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <h7 style="font-size: 0.7em; color: rgb(1, 10, 17)">
+            Created by T.T.Ouzounellis Kavlakonis
+        </h7>
     </div>
-   </div>
-  </div>
-  <!-- Contact form -->
-  <div class="contact-form" id="contact">
-   <div class="container">
-    <form action="https://formspree.io/theodore.ouzounellis@gmail.com" method="POST">
-     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-       <h1>
-        Get in Touch
-       </h1>
-      </div>
-      <div class="col-lg-8 col-md-8 col-sm-12 right">
-       <div class="form-group">
-        <input class="form-control form-control-lg" name="name" placeholder="Your Name" type="text"/>
-       </div>
-       <div class="form-group">
-        <input class="form-control form-control-lg" name="email" placeholder="YourEmail@email.com" type="email"/>
-       </div>
-       <div class="form-group">
-        <textarea class="form-control form-control-lg" name="message" placeholder="Message"></textarea>
-       </div>
-       <input class="btn btn-secondary btn-block" name="" onclick="" type="submit" value="Send"/>
-      </div>
-     </div>
-    </form>
-   </div>
-   <h7 style="font-size: 0.7em; color: rgb(1, 10, 17)">
-    Created by T.T.Ouzounellis Kavlakonis
-   </h7>
-  </div>
-  <!--Scripts-Load JS-->
-  <script src="./js/main.js" type="text/javascript">
-  </script>
- </body>
+    <!--Scripts-Load JS-->
+    <script src="./js/main.js" type="text/javascript">
+    </script>
+    <script src="./js/chatbot.js" type="text/javascript">
+    </script>
+</body>
+
 </html>

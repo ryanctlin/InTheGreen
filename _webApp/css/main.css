@@ -59,7 +59,6 @@ html, h1, h2, h3, h4, h5, h6, a {
     z-index: -2;
 }
 
-
 .my-tree .overlay {
     position: absolute;
     top: 0;
@@ -113,9 +112,6 @@ html, h1, h2, h3, h4, h5, h6, a {
 .split-screen-right {
     background-color: white;
 }
-.split-screen-right h2 { display: inline;font-size: 3em;}
-.split-screen-right h3 { display: inline;font-size: 3em;}
-
 
 .contact-form {
     padding: 2em;
@@ -248,8 +244,72 @@ html, h1, h2, h3, h4, h5, h6, a {
     color: rgba(0, 0, 0, 0.4);
 }
 
+#circle-bar {
+    width: 16em;
+    height: 8em;
+}
+
+svg {
+    height: 8em;
+    width: 16em;
+    fill: none;
+    stroke: red;
+    stroke-width: 10;
+    stroke-linecap: round;
+    -webkit-filter: drop-shadow( -3px -2px 5px gray);
+    filter: drop-shadow( -3px -2px 5px gray);
+}
+
+.chatbot {
+    background-color: rgb(178, 216, 173);
+}
+
+.chatbot h1 {
+    color: rgba(32, 32, 32, 0.815);
+    margin: 1em;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+#bodybox {
+    margin: 2em;
+    font: 15px arial, sans-serif;
+    background-color: rgb(178, 216, 173);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+#chatborder {
+    border-style: solid;
+    border-color: rgb(44, 59, 13);
+    background-color: #fcfcfc;
+    border-width: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+
+.chatlog {
+    font: 15px arial, sans-serif;
+    border-radius: 15px;
+}
+
+#chatbox {
+    font: 17px arial, sans-serif;
+    height: 22px;
+    width: 100%;
+}
 
 /* phones*/
+
 @media handheld, only screen and (max-width: 769px) {
     .header {
         background-attachment: scroll !important;
@@ -259,7 +319,7 @@ html, h1, h2, h3, h4, h5, h6, a {
         background-attachment: scroll !important;
         background-position: center center !important;
     }
-    .my-tree img{
+    .my-tree img {
         display: block;
         margin-left: auto;
         margin-right: auto;
