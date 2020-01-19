@@ -5,7 +5,7 @@ import pandas as pd
 from python_scripts.scraping_loop import get_data
 app = FlaskAPI(__name__)
 
-@app.route("/api/v1/get_esg_average", methods=['GET'])
+@app.route("/api/v1/get_esg_average", methods=['GET','POST'])
 def get_esg_average():
     df = pd.read_csv('./python_scripts/data/esg_scores.csv', delimiter=',')
     esg_average = 0
@@ -24,7 +24,7 @@ def get_esg_average():
     esg_average = "{0:.1f}".format(esg_average)
     return esg_average
 
-@app.route("/api/v1/update", methods=['GET'])
+@app.route("/api/v1/update", methods=['GET','POST'])
 def update():
     get_data()
     return "Update Successful"
