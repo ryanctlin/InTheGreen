@@ -1,3 +1,4 @@
+# InTheGreen
 ## Inspiration
 Passive investment strategies such as index funds have grown significantly over the past few years, accounting for nearly half of the current funds market value. However, this has led to a disconnect between everyday investors and the companies which they implicitly support. We believe that by updating users on key sustainability issues in their portfolio through a gamified webapp, we can help them make more informed decisions about their investments.
 
