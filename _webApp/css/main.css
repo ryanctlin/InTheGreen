@@ -7,7 +7,7 @@ html, h1, h2, h3, h4, h5, h6, a {
 /*header style*/
 
 .header {
-    background-image: url('../images/headerback4.jpg');
+    background-image: url('../images/LOGO2.PNG');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -114,8 +114,8 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .contact-form {
+    background-image: url('../images/headerback4.jpg');
     padding: 2em;
-    margin-top: 3em;
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -279,6 +279,7 @@ svg {
     padding-bottom: 0.5em;
     padding-right: 0.5em;
     padding-left: 0.5em;
+    margin-bottom: 0em;
 }
 
 #chatborder {

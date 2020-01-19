@@ -4,8 +4,15 @@ var messages = [], //array that hold the record of each string in chat
     newBotMessage = "",
     bestComp = "['CBRE', 'TEL', 'PLD', 'PEAK', 'KEYS']",
     worstComp = "['CMS', 'STT', 'NLOK', 'HLT', 'XRX']",
-    botName = 'Chatbot', //name of the chatbot
+    botName = 'Greenbot', //name of the chatbot
     talking = true; //when false the speach function doesn't work
+
+    messages.push("<b>" + botName + ":</b> " + "Hello there! What can I help you with?");
+    //outputs the last few array elements of messages to html
+    for (var i = 1; i < 8; i++) {
+    if (messages[messages.length - i])
+        document.getElementById("chatlog" + i).innerHTML = messages[messages.length - i];
+    }
 //
 //
 //****************************************************************
