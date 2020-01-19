@@ -37,7 +37,7 @@
       <recent name="D:\Git Repo\Hack Cambridge 2020\hackcambridge-2020" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.qna_test">
+  <component name="RunManager" selected="Python.yahoo_data (1)">
     <configuration name="analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hackcambridge-2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scraping_loop (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sp500_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hackcambridge-2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,7 +117,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_scripts/scraping_loop.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_scripts/sp500_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scraping_loop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="yahoo_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hackcambridge-2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,56 +134,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Git Repo\Hack Cambridge 2020\hackcambridge-2020\python_scripts\scraping_loop.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sp500_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hackcambridge-2020" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Git Repo\Hack Cambridge 2020\hackcambridge-2020\python_scripts\sp500_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="yahoo_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hackcambridge-2020" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Git Repo\Hack Cambridge 2020\hackcambridge-2020\python_scripts\yahoo_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_scripts/yahoo_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.qna_test" />
-        <item itemvalue="Python.analysis" />
+        <item itemvalue="Python.yahoo_data (1)" />
+        <item itemvalue="Python.sp500_data" />
         <item itemvalue="Python.application" />
-        <item itemvalue="Python.scraping_loop (1)" />
-        <item itemvalue="Python.scraping_loop (1)" />
+        <item itemvalue="Python.analysis" />
+        <item itemvalue="Python.qna_test" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +181,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579359840150</updated>
       <workItem from="1579359864620" duration="14871000" />
-      <workItem from="1579380218544" duration="18429000" />
+      <workItem from="1579380218544" duration="19570000" />
+      <workItem from="1579422874093" duration="2438000" />
     </task>
     <servers />
   </component>
@@ -241,22 +198,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579367366493" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1579409999588">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1579425161721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579409999588" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1579409999587">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579425161721" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1579425161721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579409999587" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1579409999587">
+    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579425161721" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1579425161721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579409999587" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1579409999587">
+    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579425161721" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1579425161721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579409999587" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579425161721" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579424305583">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579424305583" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579424305583">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579424305583" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579424305583">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579424305583" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579424305583">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579424305583" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1579367433051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -266,10 +239,11 @@
     <SUITE FILE_PATH="coverage/hackcambridge_2020$sp500_data__1_.coverage" NAME="sp500_data (1) Coverage Results" MODIFIED="1579373159623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$yahoo_data.coverage" NAME="yahoo_data Coverage Results" MODIFIED="1579368229572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$bs4_EUR_Lex.coverage" NAME="bs4_EUR_Lex Coverage Results" MODIFIED="1579364993332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../EU Legislation NLP/EU_Legislation_NLP/web_scraping" />
-    <SUITE FILE_PATH="coverage/hackcambridge_2020$qna_test.coverage" NAME="qna_test Coverage Results" MODIFIED="1579409999579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
-    <SUITE FILE_PATH="coverage/hackcambridge_2020$sp500_data.coverage" NAME="sp500_data Coverage Results" MODIFIED="1579371622938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_webApp" />
-    <SUITE FILE_PATH="coverage/hackcambridge_2020$application.coverage" NAME="application Coverage Results" MODIFIED="1579405210178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hackcambridge_2020$qna_test.coverage" NAME="qna_test Coverage Results" MODIFIED="1579411120364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
+    <SUITE FILE_PATH="coverage/hackcambridge_2020$yahoo_data__1_.coverage" NAME="yahoo_data (1) Coverage Results" MODIFIED="1579425161712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
+    <SUITE FILE_PATH="coverage/hackcambridge_2020$sp500_data.coverage" NAME="sp500_data Coverage Results" MODIFIED="1579425074849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
+    <SUITE FILE_PATH="coverage/hackcambridge_2020$application.coverage" NAME="application Coverage Results" MODIFIED="1579424340046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackcambridge_2020$scraping_loop__1_.coverage" NAME="scraping_loop (1) Coverage Results" MODIFIED="1579380065681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
-    <SUITE FILE_PATH="coverage/hackcambridge_2020$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1579407721821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
+    <SUITE FILE_PATH="coverage/hackcambridge_2020$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1579423870531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_scripts" />
   </component>
 </project>
