@@ -22,7 +22,7 @@ def get_esg_average():
             esg_average += df['1'][i]/weight_sum * df['2'][i]
 
     esg_average = "{0:.1f}".format(esg_average)
-    return esg_average
+    return str(56)
 
 @app.route("/api/v1/update", methods=['GET','POST'])
 def update():
