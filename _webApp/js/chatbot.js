@@ -1,6 +1,9 @@
 var messages = [], //array that hold the record of each string in chat
     lastUserMessage = "", //keeps track of the most recent input string from the user
     botMessage = "", //var keeps track of what the chatbot is going to say
+    newBotMessage = "",
+    bestComp = "['CBRE', 'TEL', 'PLD', 'PEAK', 'KEYS']",
+    worstComp = "['CMS', 'STT', 'NLOK', 'HLT', 'XRX']",
     botName = 'Chatbot', //name of the chatbot
     talking = true; //when false the speach function doesn't work
 //
@@ -13,12 +16,31 @@ var messages = [], //array that hold the record of each string in chat
 //****************************************************************
 //****************************************************************
 //edit this function to change what the chatbot says
-
+function getComp() {
+    // url best
+    url_best = "https://sustainstocks.azurewebsites.net/api/qna/best";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url_best,false);
+    xhr.onreadystatechange = function() { 
+        if (xhr.readyState == 4 && xhr.status == 200){
+            bestComp = xhr.response.text();
+        }
+    }
+    
+    url_worst = "https://sustainstocks.azurewebsites.net/api/qna/worst";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url_worst,false);
+    xhr.onreadystatechange = function() { 
+        if (xhr.readyState == 4 && xhr.status == 200){
+            worstComp = xhr.response.text();
+        }
+    }
+}
 //azure API chatbot
-async function chatbotResponse() {
+function chatbotResponse() {
     talking = true;
     
-    var host = " https://sustainableqna.azurewebsites.net/qnamaker";
+    var host = "https://sustainableqna.azurewebsites.net/qnamaker";
 
     // Authorization endpoint key
     // From Publish Page
@@ -35,17 +57,28 @@ async function chatbotResponse() {
     };
 
     var url = host + route;
-    var options = {
-        method: 'POST',
-        headers: {
-            'Authorization': "EndpointKey " + endpoint_key,
-            'Content-Type':"application/json"
-        },
-        json: true,
-        body: question
-    };
-    var response = await fetch(url,options);
-    console.log(response);
+    //get best and worst companies
+    //make api call
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url,false);
+    xhr.setRequestHeader('Authorization',"EndpointKey " + endpoint_key);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function() { 
+        if (xhr.readyState == 4 && xhr.status == 200){
+            var resp = JSON.parse(xhr.response);
+            var raw_text = resp["answers"][0]["answer"];
+            //get bot message answer
+            if(raw_text.includes("$best")){
+                botMessage = raw_text.replace("$best",bestComp);
+            }else if(raw_text.includes("$worst")){
+                botMessage = raw_text.replace("$worst",worstComp);
+            }else{
+                botMessage = raw_text;
+            }
+        }
+    }
+    xhr.send(JSON.stringify(question));   
 }
 //****************************************************************
 //****************************************************************
@@ -54,7 +87,6 @@ async function chatbotResponse() {
 //****************************************************************
 //****************************************************************
 //****************************************************************
-//
 //
 //
 //this runs each time enter is pressed.
@@ -69,6 +101,8 @@ function newEntry() {
         //adds the value of the chatbox to the array messages
         messages.push(lastUserMessage);
         //Speech(lastUserMessage);  //says what the user typed outloud
+        //get best and worst stocks
+        //getComp();
         //sets the variable botMessage in response to lastUserMessage
         chatbotResponse();
         //add the chatbot's name and message to the array messages
