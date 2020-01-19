@@ -6,7 +6,7 @@ $(document).ready(function () {
 //navbar scroll
 $(".navbar a").click(function () {
 	$("body,html").animate({
-		scrollTop: $("#" + $(this).data('value')).offset().top
+		scrollTop: $("#" + $(this).data('value')).offset().top - 50
 	}, 1000)
 	$('.navbar-collapse').collapse('toggle');
 
@@ -21,21 +21,35 @@ jQuery(document).ready(function () {
 	});
 });
 
-//Change image
-// function getStats() {  
-// 	//fetch data
-// 	var level;
-// 	const response = await fetch('http://example.com/movies.json');
-// 	if(response >= 75){
-// 		level=4
-// 	}else if(response>=50 && response<75){
-// 		level=3;
-// 	}else if(response>=25 && response<50){
-// 		level=2;
-// 	}else{
-// 		level=1
-// 	}
-// 	document.getElementById("tree-img").src = "images/stage-".concat(level.toString(),"-tree.png");
-// 	console.log(imageNo);
-// }
-//setTimeout(getStats, 1000);
+//Semi Circle Bar animation
+var bar = new ProgressBar.SemiCircle('#rating-bar', {
+	strokeWidth: 10,
+	color: 'red',
+	trailColor: '#eee',
+	trailWidth: 10,
+	easing: 'easeInOut',
+	duration: 1400,
+	svgStyle: null,
+	text: {
+		value: '',
+		alignToBottom: false
+	},
+
+	// Set default step function for all animate calls
+	step: (state, bar) => {
+		bar.path.setAttribute('stroke', state.color);
+		var value = Math.round(bar.value() * 100);
+		if (value === 0) {
+			bar.setText('');
+		} else {
+			bar.setText("Rating");
+		}
+
+		bar.text.style.color = state.color;
+	}
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(0.45);  // Number from 0.0 to 1.0
+
